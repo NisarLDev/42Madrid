@@ -19,9 +19,9 @@ int	whitespaces(char *str, int *ptr_i)
 	count = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	while (str[i] && (str[i] == 43 || str[i] == 45))
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == 45)
+		if (str[i] == '-')
 			count *= -1;
 		i++;
 	}
