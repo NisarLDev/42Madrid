@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_char_to_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: nlaftiss <nlaftiss@student.42madrid.com>    #+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 18:21:14 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/09/24 18:25:42 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/19 18:07:15 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/11/10 11:42:57 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include "libft.h"
+
+char	*ft_char_to_str(char c, size_t len)
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	char	*str;
+
+	if (len < 0)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * len + 1);
+	if (!str)
+		return (NULL);
+	ft_memset(str, c, len);
+	str[len] = '\0';
+	return (str);
 }

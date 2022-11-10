@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_str_toupper.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 18:21:14 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/09/24 18:25:42 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/09/21 18:20:04 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/09/25 17:25:48 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include "libft.h"
+
+int	ft_str_toupper(char *str)
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	int	i;
+
+	if (!str)
+		return (-1);
+	i = 0;
+	while (*str)
+	{
+		if (*str >= 'a' && *str <= 'z')
+		{
+			*str -= 32;
+			i++;
+		}
+		str++;
+	}
+	return (i);
 }

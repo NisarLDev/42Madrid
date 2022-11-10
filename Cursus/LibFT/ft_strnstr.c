@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 18:21:14 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/09/24 18:25:42 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/16 13:45:12 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/10/22 15:55:02 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include "libft.h"
+
+char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	size_t	litsize;
+
+	litsize = ft_strlen(little);
+	if (!litsize)
+		return ((char *)big);
+	while (*big && litsize <= len--)
+	{
+		if (!ft_strncmp(big, little, litsize))
+			return ((char *)big);
+		big++;
+	}
+	return (NULL);
 }

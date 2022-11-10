@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strmerge.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 13:13:33 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/11/10 14:07:04 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/13 14:46:33 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/10/15 14:08:42 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strmerge(char *s1, char *s2)
 {
-	unsigned int	z;
+	char	*str;
+	size_t	size;
 
-	z = 0;
-	while ((s1[z] != '\0' || s2[z] != '\0') && n--)
+	if (!s1 || !s2)
 	{
-		if (s1[z] != s2[z])
-			return ((unsigned char)s1[z] - (unsigned char)s2[z]);
-		z++;
+		ft_free_ptr((void *)&s1);
+		ft_free_ptr((void *)&s2);
+		return (NULL);
 	}
-	return (0);
+	size = ft_strlen(s1) + ft_strlen(s2) + 1;
+	str = (char *)malloc(sizeof(char) * size);
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
+	ft_strlcat(str, s2, size);
+	ft_free_ptr((void *)&s1);
+	ft_free_ptr((void *)&s2);
+	return (str);
 }

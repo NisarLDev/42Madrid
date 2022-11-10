@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 18:21:14 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/09/24 18:25:42 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/19 10:14:13 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/10/20 13:14:15 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	unsigned int	i;
+
+	if (!s || !f)
+		return ;
+	i = -1;
+	while (s[++i])
+		f(i, &s[i]);
 }

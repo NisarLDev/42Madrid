@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 13:13:33 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/11/10 14:07:04 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/12 14:43:51 by nlaftiss          #+#    #+#             */
+/*   Updated: 2022/10/23 13:12:16 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+static size_t	strnlen(const char *s, size_t n)
 {
-	unsigned int	z;
+	size_t	i;
 
-	z = 0;
-	while ((s1[z] != '\0' || s2[z] != '\0') && n--)
-	{
-		if (s1[z] != s2[z])
-			return ((unsigned char)s1[z] - (unsigned char)s2[z]);
-		z++;
-	}
-	return (0);
+	i = 0;
+	while (s[i] && i < n)
+		i++;
+	return (i);
+}
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	srclen;
+	size_t	dstlen;
+
+	srclen = ft_strlen(src);
+	dstlen = strnlen(dst, dstsize);
+	if (dstlen == dstsize)
+		return (dstlen + srclen);
+	ft_strlcpy(&dst[dstlen], src, dstsize - dstlen);
+	return (dstlen + srclen);
 }

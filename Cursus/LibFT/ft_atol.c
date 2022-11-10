@@ -1,18 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 18:21:14 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/09/24 18:25:42 by nlaftiss         ###   ########.fr       */
+/*   Created: 2022/10/25 15:46:57 by wleite            #+#    #+#             */
+/*   Updated: 2022/11/10 10:05:03 by wleite           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include "libft.h"
+
+long	ft_atol(const char *nptr)
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	long int	sign;
+	long int	res;
+
+	while ((*nptr && *nptr == ' ') || (*nptr >= 9 && *nptr <= 13))
+		nptr++;
+	sign = 1;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			sign = -sign;
+		nptr++;
+	}
+	res = 0;
+	while (*nptr && ft_isdigit(*nptr))
+	{
+		res = (res * 10) + (*nptr - '0');
+		nptr++;
+	}
+	return (res * sign);
 }
