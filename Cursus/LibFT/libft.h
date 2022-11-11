@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: nlaftiss <nlaftiss@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 15:26:53 by nlaftiss          #+#    #+#             */
-/*   Updated: 2022/11/10 12:02:32 by nlaftiss         ###   ########.fr       */
+/*   Updated: 2022/11/11 13:54:15 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+}					t_list;
 
 //Part 1 - Libc functions
 
@@ -518,92 +518,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
  * @param f  The adress of the function used to iterate on the list.
  */
 void	ft_lstiter(t_list *lst, void (*f)(void *));
-
-/**
- * @brief Deallocates the pointer memory address previously allocated
- * by a call to calloc, malloc, or realloc.
- *
- * @param ptr This is the pointer address to a memory block previously
- * allocated with malloc, calloc or realloc to be deallocated.
- * If a null pointer is passed as argument, no action occurs.
- */
-void	ft_free_ptr(void **ptr);
-
-/**
- * @brief Searches for the first occurrence of the string
- * old_word in the string str and replaces with the string new_word.
- * The memory address of the string str passed as a parameter will be freed.
- *
- * @param str This is the C string allocated with malloc to be scanned.
- * @param old_word This is the string to be located inside str.
- * @param new_word This is the string to be replaced inside str.
- * @return Returns a new string with old_word replaced by new_word
- * or a duplicate of the string pointed to by str in case old_word
- * not found. If an error occurs, a null pointer is returned.
- */
-char	*ft_str_replace(char *str,	const char *old_word, const char *new_word);
-
-/**
- * @brief Converts lowercase letters of the string to uppercase.
- *
- * @param str This is the string to be converted to uppercase.
- * @return Returns the number of characters changed. Returns -1
- * if the string is NULL.
- */
-int		ft_str_toupper(char *str);
-
-/**
- * @brief Creates a string of size len filled with the unsigned char
- * passed as parameter.
- *
- * @param c This is the unsigned char that will fill the string.
- * @param len This is the number of bytes the string will be created.
- * @return Returns a string, allocated with malloc filled
- * with the unsigned char passed as parameter null terminated with '\\0'.
- */
-char	*ft_char_to_str(char c, size_t len);
-
-/**
- * @brief Allocates with malloc and returns a string representing the
- * unsigned integer in the base received as an argument.
- *
- * @param n The unsigned integer to convert.
- * @param base This is the string representing which base the
- * unsigned integer will be converted to. Example "0123456789" for base 10.
- * @return The string representing the unsigned integer in the base passed as an
- * argument. NULL if the allocation fails.
- */
-char	*ft_uitoa_base(size_t n, const char *base);
-
-/**
- * @brief Reads a line from a file descriptor
- *
- * @param fd File descriptor to read.
- * @return Return a string including \\n if is a line. In case of the file
- * dont have \\n return a string without \\n, NULL if the file is empty
- * or error occurred.
- */
-char	*ft_get_next_line(int fd);
-
-/**
- * @brief Allocates with malloc and returns a new string, which is the
- * result of the concatenation of 's1' and 's2'. The memory address
- * of 's1' and 's2' will be freed.
- *
- * @param s1 The prefix string.
- * @param s2 The suffix string.
- * @return The new string. NULL if the allocation fails.
- */
-char	*ft_strmerge(char *s1, char *s2);
-
-/**
- * @brief Converts the string argument nptr to a long integer (type long int).
- *
- * @param nptr This is the string representation of an integral number.
- * @return This function returns the converted integral number
- * as a long int value.
- * If no valid conversion could be performed, it returns zero.
- */
-long	ft_atol(const char *nptr);
 
 #endif
