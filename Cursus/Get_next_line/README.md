@@ -25,4 +25,6 @@ Bibliography:
 
 12 - https://www.freecodecamp.org/news/python-print-without-new-line-print-on-the-same-line
 
+13 - https://github.com/hanshazairi/42-get_next_line
+
 
