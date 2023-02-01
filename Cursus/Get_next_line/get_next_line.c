@@ -6,7 +6,7 @@
 /*   By: nlaftiss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 14:14:50 by nlaftiss          #+#    #+#             */
-/*   Updated: 2023/02/01 14:34:19 by nlaftiss         ###   ########.fr       */
+/*   Updated: 2023/02/01 14:38:56 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include
@@ -19,7 +19,10 @@ char *get_next_line(int fd);
 
 	if (fd < 0 || BUFFER_SIZE < 0 || read(fd, &line, 0) < 0)
 		return (NULL);
-}
+	readed = 1;
+	line = NULL;
+	return (line);
+}	
 
 void	read_and_stash()
 {
