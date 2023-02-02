@@ -49,7 +49,19 @@ void	read_and_stash(int fd, t_list **stash, int *readed_ptr)
 
 void	add_to_stash()
 {
+   int	i;
+   t_list *current;
+   t_list *new_code;
 
+   new_node = malloc(size: sizeof(t_list));
+   if (new_node == NULL)
+       return;
+   new_node->next = NULL;
+   new_node->content = malloc(sizeof(char)* (readed_ptr + 1));
+   if (new_node->content == NULL)
+	   return;
+   i = 0;
+   while (buff)
 }
 
 void	extract_line
