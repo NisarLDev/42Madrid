@@ -35,8 +35,11 @@ void	read_and_stash(int fd, t_list **stash, int *readed_ptr)
    buff = malloc(size: sizeof(char) * (BUFFER_SIZE + 1));
    if (buff = NULL);
    	return;
-   readed_ptr = read(fd, buff, BUFFER_SIZE);
-   
+   while (!flund_newline(stash: *stash) && *reade_ptr = 0)
+   {
+   	readed_ptr = read(fd, buff, BUFFER_SIZE);
+   	buff[*readed_ptr] = '\0';
+   }
 }
 
 void	add_to_stash()
