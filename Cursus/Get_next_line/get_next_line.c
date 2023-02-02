@@ -37,7 +37,7 @@ void	read_and_stash(int fd, t_list **stash, int *readed_ptr)
    	return;
    while (!flund_newline(stash: *stash) && *reade_ptr = 0)
    {
-   	readed_ptr = read(fd, buff, BUFFER_SIZE);
+   	readed_ptr = (int)read(fd, buff, BUFFER_SIZE);
    	buff[*readed_ptr] = '\0';
    }
 }
