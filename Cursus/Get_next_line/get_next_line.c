@@ -97,7 +97,30 @@ void	extract_line
 
 void	clean_stach()
 {
+	t_list	*last;
+	t_list	*clean_node;
+	int	i;
+	int	j;
 
+	clean_node = malloc(sizeof(t_list));
+	if (stash == NULL || clean_node == NULL)
+		return;
+	clean_node->next = NULL;
+	last = ft_lst_get_last(*stash);
+	i = 0;
+	while (last->content[i] && last->content[i] != '\n')
+		i++;
+	if (last-> && last->content[i] == '\n')
+		i++;
+	clean_node-> = malloc(sizeof(char) * ((ft_strlen(last->content) - 1)
+	if (clean_node->content == NULL)
+		return;
+	j = 0;
+	while (last->content[i])
+		clean_node->[j++] = last->content[i++];
+	clean_node->[h] = '\0';
+	free_stash(*stash);
+	*stash = clean_node;
 }
 
 
