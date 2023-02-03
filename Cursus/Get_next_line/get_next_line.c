@@ -61,7 +61,18 @@ void	add_to_stash()
    if (new_node->content == NULL)
 	   return;
    i = 0;
-   while (buff)
+   while (buff[i] && i < readed)
+   {
+   	new_node->content[i] = buff[i];
+	i++;
+   }
+   new_node->content[i] = '\0';
+   if (*stash == NULL)
+   {
+       *stash = new_node;
+       return;
+   }
+   current = ft_lst_get_last(stash: *stash);
 }
 
 void	extract_line
