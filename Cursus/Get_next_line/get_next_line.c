@@ -84,7 +84,7 @@ void	add_to_stash()
    last->next = new_node;
 }
 
-void	extract_line
+void	extract_line(t_list *stash, char **line)
 {
    int i;
    int j;
@@ -92,7 +92,25 @@ void	extract_line
    if (stash == NULL)
        return;
    generate_line(line, stash);
-
+   if (*line == NULL)
+	   return;
+   j = 0;
+   while (stash)
+   {
+   	i = 0;
+	while (stash->content[i])
+	{
+		if (stash->content[i] == '\n')
+		{
+			(*line)[j++] = stash->content[i];
+			break;
+		}
+		(*line)[j++] = stash->content[i++];	
+	
+	}
+   	stash = stash->next;
+    }
+    (line)[j] = '\0';
 }
 
 void	clean_stach()
