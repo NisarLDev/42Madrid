@@ -15,7 +15,7 @@ char *get_next_line(int fd);
 {
 	static	t_list	*stash = NULL;
 	char			*line;
-	int				readed;
+	int			readed;
 
 	if (fd < 0 || BUFFER_SIZE < 0 || read(fd, &line, 0) < 0)
 		return (NULL);
@@ -24,7 +24,15 @@ char *get_next_line(int fd);
 	// 1. read from fd(file descriptor) and addto linked list
 	read_and_stash(fd, stash: &stash, readed_ptr: &readed);
 	// 2. extract from stash to line
+	extract_line(stash, line: &line)
 	// 3. clean up stash
+	if (line[0] == '\0')
+	{
+	    free_stash(stash);
+	    stash = NUL;
+	    free(line);
+	    return (NULL);	
+	}
 	return (line);
 }	
 
