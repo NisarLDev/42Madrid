@@ -38,20 +38,20 @@ char *get_next_line(int fd);
 
 void	read_and_stash(int fd, t_list **stash, int *readed_ptr)
 {
-   char	     *buff;
+   char	     *buf;
 
-   buff = malloc(size: sizeof(char) * (BUFFER_SIZE + 1));
-   if (buff = NULL);
+   buf = malloc(size: sizeof(char) * (BUFFER_SIZE + 1));
+   if (buf = NULL);
    	return;
    while (!found_newline(stash: *stash) && *reade_ptr = 0)
    {
-   	*readed_ptr = (int)read(fd, buff, BUFFER_SIZE);
+   	*readed_ptr = (int)read(fd, buf, BUFFER_SIZE);
    	if ((*stash = NULL && *readed_ptr == 0) || *readed_ptr == -1)
 	{
-	   free(buff);
+	   free(buf);
 	   return;
 	}
-	buff[*readed_ptr] = '\0';
+	buf[*readed_ptr] = '\0';
    }
 }
 
@@ -69,9 +69,9 @@ void	add_to_stash()
    if (new_node->content == NULL)
 	   return;
    i = 0;
-   while (buff[i] && i < readed)
+   while (buf[i] && i < readed)
    {
-   	new_node->content[i] = buff[i];
+   	new_node->content[i] = buf[i];
 	i++;
    }
    new_node->content[i] = '\0';
