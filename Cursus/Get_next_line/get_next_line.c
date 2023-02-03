@@ -72,12 +72,18 @@ void	add_to_stash()
        *stash = new_node;
        return;
    }
-   current = ft_lst_get_last(stash: *stash);
+   last = ft_lst_get_last(stash: *stash);
+   last->next = new_node;
 }
 
 void	extract_line
 {
+   int i;
+   int j;
 
+   if (stash == NULL)
+       return;
+   generate_line(line, stash);
 
 }
 
