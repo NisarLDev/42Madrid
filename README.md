@@ -2,6 +2,10 @@
 
 Scoring of the projects carried out:
 
+------------------------------------------------------------------------------------
+
+Piscine in language C:
+
 1 - Shell 00. Score 100%.
 
 2 - Shell 01. Score 100%.
@@ -20,6 +24,8 @@ Scoring of the projects carried out:
 
 9 - C 06. Score 100%.
 
+------------------------------------------------------------------------------------
+
+42 Madrid Cursus:
+
 10 - Libft. Score 125%.
-
-
