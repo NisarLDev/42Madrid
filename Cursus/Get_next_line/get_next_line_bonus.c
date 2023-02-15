@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/15 16:52:54 by nlaftiss          #+#    #+#             */
-/*   Updated: 2023/02/15 17:01:21 by nlaftiss         ###   ########.fr       */
+/*   Created: 2023/02/15 16:58:52 by nlaftiss          #+#    #+#             */
+/*   Updated: 2023/02/15 16:59:33 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_readed_line(char *start)
 {
@@ -72,7 +72,7 @@ char	*get_next_line(int fd)
 {
 	char		*tmp;
 	int			fd_read;
-	static char	*start_str;
+	static char	*start_str[1024] = {NULL};
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
@@ -80,7 +80,7 @@ char	*get_next_line(int fd)
 	tmp = (char *)malloc(1 + BUFFER_SIZE * sizeof(char));
 	if (!tmp)
 		return (NULL);
-	while (!(ft_strchr(start_str, '\n')) && fd_read != 0)
+	while (!(ft_strchr(start_str[fd], '\n')) && fd_read != 0)
 	{
 		fd_read = read(fd, tmp, BUFFER_SIZE);
 		if (fd_read == -1)
@@ -89,10 +89,10 @@ char	*get_next_line(int fd)
 			return (NULL);
 		}
 		tmp[fd_read] = '\0';
-		start_str = ft_strjoin(start_str, tmp);
+		start_str[fd] = ft_strjoin(start_str[fd], tmp);
 	}
 	free(tmp);
-	tmp = ft_readed_line(start_str);
-	start_str = ft_move_start(start_str);
+	tmp = ft_readed_line(start_str[fd]);
+	start_str[fd] = ft_move_start(start_str[fd]);
 	return (tmp);
 }
