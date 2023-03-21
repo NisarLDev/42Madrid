@@ -25,11 +25,17 @@ Bibliography:
 In English:
 
 1 - https://www.firmcodes.com/write-printf-function-c/
+
 2 - https://stackoverflow.com/questions/1735236/how-to-write-my-own-printf-in-c
+
 3 - https://www.educative.io/answers/how-to-use-printf-in-c
+
 4 - https://github.com/stvngrcia/printf
+
 5 - https://www.youtube.com/watch?v=DYaIgM2XI-E
+
 6 - https://www.w3resource.com/c-programming/c-printf-statement.php
+
 7 - https://www.geeksforgeeks.org/how-to-print-using-printf/
 8 - https://www.it.uc3m.es/pbasanta/asng/DSP/L2/inclass_en.html
 9 - https://www.sciencedirect.com/topics/computer-science/printf
