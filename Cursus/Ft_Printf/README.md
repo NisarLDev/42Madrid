@@ -51,17 +51,29 @@ In English:
 13 - https://www.simplilearn.com/tutorials/cpp-tutorial/cpp-printf
 
 14 - https://www.techcrashcourse.com/2015/08/printf-stdio-c-library-function.html
+
 15 - https://community.silabs.com/s/article/iar-ew8051-printf-printf-p-formatter-options-and-code-size?language=en_US
+
 16 - https://csnotes.medium.com/ft-printf-tutorial-42project-f09b6dc1cd0e
+
 17 - https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
+
 18 - http://www.java2s.com/Code/C/Function/Arrayoffunctionpointer.htm
+
 19 - http://man7.org/linux/man-pages/man3/stdarg.3.html
+
 20 - https://developer.apple.com/library/archive/qa/qa1405/_index.html
+
 21 - https://www.cypress.com/file/54441/download
+
 22 - https://notgnoshi.github.io/printf/
+
 23 - http://www.cplusplus.com/reference/cstdio/printf/
+
 24 - http://www.pixelbeat.org/programming/gcc/format_specs.html
+
 25 - https://stackoverflow.com/questions/35791061/parameter-passing-with-ellipsis-in-c
+
 26 - https://medium.com/my-journey-at-42-silicon-valley-as-a-non-cs-major/project-4-printf-function-6396c78ac22e
 
 http://www.firmcodes.com/write-printf-function-c/
