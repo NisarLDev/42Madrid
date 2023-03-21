@@ -13,9 +13,13 @@ Bibliography:
 6 - http://www.disca.upv.es/aperles/web51/modulos/printserie/printserie.html
 
 7 - https://www.ctr.unican.es/asignaturas/intro_sw/apuntes/1.5_Programacion_Estructurada-2en1.pdf
+
 8 - https://www.e-ducalia.com/archivo/muestra-programacion-2bach-pdf.pdf
+
 9 - https://baulderasec.wordpress.com/desde-la-consola/shell-en-unixlinux-sh-ksh-bash/8-el-lenguaje-de-programacion-awk/8-3-la-funcion-printf/
+
 10 - http://diseno-programacion-computadoras.blogspot.com/2014/01/el-lenguaje-c-ii.html
+
 11 - http://maxus.fis.usal.es/FICHAS_C.WEB/01xx_PAGS/0107.html
 
 In English:
