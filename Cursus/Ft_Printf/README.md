@@ -37,12 +37,19 @@ In English:
 6 - https://www.w3resource.com/c-programming/c-printf-statement.php
 
 7 - https://www.geeksforgeeks.org/how-to-print-using-printf/
+
 8 - https://www.it.uc3m.es/pbasanta/asng/DSP/L2/inclass_en.html
+
 9 - https://www.sciencedirect.com/topics/computer-science/printf
+
 10 - https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
+
 11 - https://alvinalexander.com/programming/printf-format-cheat-sheet
+
 12 - https://www.menie.org/georges/embedded/small_printf_source_code.html
+
 13 - https://www.simplilearn.com/tutorials/cpp-tutorial/cpp-printf
+
 14 - https://www.techcrashcourse.com/2015/08/printf-stdio-c-library-function.html
 15 - https://community.silabs.com/s/article/iar-ew8051-printf-printf-p-formatter-options-and-code-size?language=en_US
 16 - https://csnotes.medium.com/ft-printf-tutorial-42project-f09b6dc1cd0e
