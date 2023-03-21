@@ -79,6 +79,4 @@ In English:
 27 - http://www.firmcodes.com/write-printf-function-c/
 
 28 - https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
-
-28 - https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
 https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
