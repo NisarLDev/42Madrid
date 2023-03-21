@@ -76,8 +76,9 @@ In English:
 
 26 - https://medium.com/my-journey-at-42-silicon-valley-as-a-non-cs-major/project-4-printf-function-6396c78ac22e
 
+27 - http://www.firmcodes.com/write-printf-function-c/
 
-
-http://www.firmcodes.com/write-printf-function-c/
+28 - https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
+odes.com/write-printf-function-c/
 
 https://medium.com/@zhang.yine/ft-printf-d95747b7aa5a
