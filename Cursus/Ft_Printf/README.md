@@ -1,11 +1,17 @@
 Bibliography:
 
 1 - https://en.wikibooks.org/wiki/C_Programming/stdio.h/printf
+
 2 - https://intprog.files.wordpress.com/2013/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill1.pdf
+
 3 - https://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_printf_es.html
+
 4 - https://webs.um.es/iverdu/D04_PrimerosProgramas.pdf
+
 5 - http://profesores.fi-b.unam.mx/tanya/CPI/Presentaciones/Tema-VI.pdf
+
 6 - http://www.disca.upv.es/aperles/web51/modulos/printserie/printserie.html
+
 7 - https://www.ctr.unican.es/asignaturas/intro_sw/apuntes/1.5_Programacion_Estructurada-2en1.pdf
 8 - https://www.e-ducalia.com/archivo/muestra-programacion-2bach-pdf.pdf
 9 - https://baulderasec.wordpress.com/desde-la-consola/shell-en-unixlinux-sh-ksh-bash/8-el-lenguaje-de-programacion-awk/8-3-la-funcion-printf/
