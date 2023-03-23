@@ -6,7 +6,7 @@
 /*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 17:00:28 by nlaftiss          #+#    #+#             */
-/*   Updated: 2023/02/15 17:01:04 by nlaftiss         ###   ########.fr       */
+/*   Updated: 2023/03/23 19:36:35 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+# ifndef BUFFER_SIZE
+# define BUFFER_SIZE 100
+# endif
 
 size_t	ft_strlen(char *str);
 char	*get_next_line(int fd);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nlaftiss <nlaftiss@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: nlaftiss <nlaftiss@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 16:52:54 by nlaftiss          #+#    #+#             */
-/*   Updated: 2023/02/15 17:01:21 by nlaftiss         ###   ########.fr       */
+/*   Updated: 2023/03/23 20:10:17 by nlaftiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	fd_read = 1;
-	tmp = (char *)malloc(1 + BUFFER_SIZE * sizeof(char));
+	tmp = (char *)malloc((1 + BUFFER_SIZE) * sizeof(char));
 	if (!tmp)
 		return (NULL);
 	while (!(ft_strchr(start_str, '\n')) && fd_read != 0)
@@ -94,5 +94,14 @@ char	*get_next_line(int fd)
 	free(tmp);
 	tmp = ft_readed_line(start_str);
 	start_str = ft_move_start(start_str);
-	return (tmp);
+	return (tmp); 
+	
+/* 	tmp = start_str;
+	free(start_str);
+	start_str = NULL;
+	start_str = ft_move_start(tmp);
+
+	return(tmp);
+ */
+	
 }
