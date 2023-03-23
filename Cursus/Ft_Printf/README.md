@@ -24,7 +24,6 @@ In Spanish:
 
 11 - http://maxus.fis.usal.es/FICHAS_C.WEB/01xx_PAGS/0107.html
 
-12 - https://www.e-ducalia.com/archivo/muestra-programacion-2bach-pdf.pdf
 
 In English:
 
