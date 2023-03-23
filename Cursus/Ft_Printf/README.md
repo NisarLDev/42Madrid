@@ -1,5 +1,7 @@
 Bibliography:
 
+In Spanish:
+
 1 - https://en.wikibooks.org/wiki/C_Programming/stdio.h/printf
 
 2 - https://intprog.files.wordpress.com/2013/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill1.pdf
@@ -21,6 +23,8 @@ Bibliography:
 10 - http://diseno-programacion-computadoras.blogspot.com/2014/01/el-lenguaje-c-ii.html
 
 11 - http://maxus.fis.usal.es/FICHAS_C.WEB/01xx_PAGS/0107.html
+
+12 - https://www.e-ducalia.com/archivo/muestra-programacion-2bach-pdf.pdf
 
 In English:
 
