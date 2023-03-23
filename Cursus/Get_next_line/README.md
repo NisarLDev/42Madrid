@@ -28,3 +28,5 @@ Bibliography:
 13 - https://github.com/hanshazairi/42-get_next_line
 
 14 - https://codeberg.org/Vusk/get_next_line/src/branch/main
+
+15 - https://harm-smits.github.io/42docs/projects/get_next_line
