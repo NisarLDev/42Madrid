@@ -44,3 +44,8 @@ Piscine in language C:
 
 
 https://cs.lmu.edu/~ray/notes/securec/
+
+2 - Secure Programming on C++ Language. Ray Toal. Computer Science Department, College of Science and Engineering of the Loyola Marymount University. Los Ángeles, EEUU.
+
+
+https://cs.lmu.edu/~ray/notes/securecpp/
