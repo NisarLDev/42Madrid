@@ -49,3 +49,9 @@ https://cs.lmu.edu/~ray/notes/securec/
 
 
 https://cs.lmu.edu/~ray/notes/securecpp/
+
+
+3 -  SEI CERT C Coding Standard. Carnegie Mellon University. Pittsburgh, EEUU.
+
+
+https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard
