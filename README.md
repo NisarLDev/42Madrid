@@ -59,3 +59,7 @@ https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard
 4 -Secure Programming HOWTO - Creating Secure Software. David A. Wheeler. 2015.
 
 https://dwheeler.com/secure-programs/
+
+5 - Subjects of 42.
+
+https://github.com/rphlr/42-Subjects
