@@ -63,3 +63,7 @@ https://dwheeler.com/secure-programs/
 5 - Subjects of 42.
 
 https://github.com/rphlr/42-Subjects
+
+6 - Headers of 42.
+
+https://github.com/42Paris/42header
