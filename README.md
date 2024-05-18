@@ -1,4 +1,4 @@
-# 42Madrid
+## 42Madrid
 
 Scoring of the projects carried out:
 
