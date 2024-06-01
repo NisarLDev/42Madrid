@@ -64,6 +64,8 @@ https://dwheeler.com/secure-programs/
 
 https://github.com/rphlr/42-Subjects
 
-6 - Headers of 42.
+6 - Headers of 42. Oficial. Paris.
 
 https://github.com/42Paris/42header
+
+7 - 42 Corrections. Oficial. World.
