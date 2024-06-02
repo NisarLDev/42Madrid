@@ -72,3 +72,7 @@ https://github.com/42Paris/42header
 7 - 42 Corrections. Oficial. World.
 
 https://github.com/Binary-Hackers/42_Corrections
+
+8 - Extension for 42 world Intranet.
+
+https://github.com/FreekBes/improved_intra
