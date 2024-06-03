@@ -20,7 +20,7 @@ Scoring of the projects carried out:
 
 ------------------------------------------------------------------------------------
 
-### Piscine in language C:
+### Piscina in language C:
 
 1 - Shell 00. Score 100%.
 
