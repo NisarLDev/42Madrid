@@ -4,7 +4,11 @@
 
 #### Due to security flaws in the architectural design of programming languages with manual memory management such as C and C++, the US White House recommends not using these computer programming languages. Instead, it recommends using languages such as Python, Java or Rust, which have safe memory management in their architecture.
 
+Bibliography:
 
+https://www.whitehouse.gov/wp-content/uploads/2024/02/Final-ONCD-Technical-Report.pdf
+
+https://www.genbeta.com/a-fondo/creador-c-responde-a-casa-blanca-muchos-nuevos-lenguajes-seguros-subcontratan-trabajo-c-c
 
 #### As of GCC version 14, C in its 1999 version is not supported for compilation, therefore the source code in this repository cannot be compiled in that version.
 
