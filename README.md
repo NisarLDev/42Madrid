@@ -6,6 +6,7 @@
 
 
 
+#### As of GCC version 14, C in its 1999 version is not supported for compilation, therefore the source code in this repository cannot be compiled in that version.
 
 
 
