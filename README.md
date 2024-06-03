@@ -1,5 +1,14 @@
 ## 42Madrid
 
+### Year 2024.
+
+#### Due to security flaws in the architectural design of programming languages with manual memory management such as C and C++, the US White House recommends not using these computer programming languages. Instead, it recommends using languages such as Python, Java or Rust, which have safe memory management in their architecture.
+
+
+
+
+
+
 Scoring of the projects carried out:
 
 ------------------------------------------------------------------------------------
