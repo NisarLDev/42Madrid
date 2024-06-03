@@ -10,9 +10,11 @@ https://www.whitehouse.gov/wp-content/uploads/2024/02/Final-ONCD-Technical-Repor
 
 https://www.genbeta.com/a-fondo/creador-c-responde-a-casa-blanca-muchos-nuevos-lenguajes-seguros-subcontratan-trabajo-c-c
 
-#### As of GCC version 14, C in its 1999 version is not supported for compilation, therefore the source code in this repository cannot be compiled in that version.
+#### As of GCC version 14, C version 1999 is not supported for compilation, therefore the source code in this repository cannot be compiled to that version in newer versions of Fedora.
 
+Bibliography:
 
+https://fedoraproject.org/wiki/Changes/PortingToModernC
 
 Scoring of the projects carried out:
 
