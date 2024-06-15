@@ -94,3 +94,7 @@ https://github.com/Binary-Hackers/42_Corrections
 8 - Extension for 42 world Intranet.
 
 https://github.com/FreekBes/improved_intra
+
+9 - Cadenas en C: Cómo declarar e inicializar variables de cadena en C. Guru99.
+
+https://www.guru99.com/es/c-strings.html
