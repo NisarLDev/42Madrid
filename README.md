@@ -98,3 +98,5 @@ https://github.com/FreekBes/improved_intra
 9 - Cadenas en C: Cómo declarar e inicializar variables de cadena en C. Guru99.
 
 https://www.guru99.com/es/c-strings.html
+
+10 - Apuntes sobre el lenguaje de programación C. "El lenguaje de programación C" por Enrique Vicente Bonet Esteban. Universidad de Valencia. España. Año 2009.
