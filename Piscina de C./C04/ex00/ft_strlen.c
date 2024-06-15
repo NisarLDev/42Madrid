@@ -23,7 +23,7 @@ int	ft_strlen(char *str)
 }
 /*#include <stdio.h>
 int main(){
-char string_1[100] = "The C programming language was created in the year ninetee>
+char string_1[100] = "The C programming language was created in the year nineteen seventy-two. ";
 ft_strlen(string_1);
 printf("Length of the string:%d\n",ft_strlen(string_1));
 }*/
