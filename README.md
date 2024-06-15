@@ -16,7 +16,7 @@ Bibliography:
 
 https://fedoraproject.org/wiki/Changes/PortingToModernC
 
-### I myself have tested on 15 June 2024 with the gcc compiler in version 14.1.1 installed on a Fedora operating system in version 40, that you can compile and run the code without any problems.
+### I myself have tested on 15 June 2024 with the gcc compiler in version 14.1.1 installed on a Fedora operating system in version 40, that you can compile and run the code without any problems. So the preceding section above referring to the impossibility of compiling on modern fedora systems is subject to some systems, not all, depending on one's particular circumstances.
 
 Scoring of the projects carried out:
 
