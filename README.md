@@ -100,3 +100,5 @@ https://github.com/FreekBes/improved_intra
 https://www.guru99.com/es/c-strings.html
 
 10 - Apuntes sobre el lenguaje de programación C. "El lenguaje de programación C" por Enrique Vicente Bonet Esteban. Universidad de Valencia. España. Año 2009.
+
+https://informatica.uv.es/estguia/ATD/apuntes/laboratorio/Lenguaje-C.pdf
